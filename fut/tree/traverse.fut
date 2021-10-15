@@ -2,7 +2,7 @@ import "../util"
 import "../hoas"
 import "tesselate"
 
-let newStack   't (i:t) (lg:i64):(i64,[]t) = (0,replicate (lg+1) i)
+let newStack   't (i:t) (lg:i64):(i64,[lg]t) = (0,replicate lg i)
 let emptyStack 't [lg] (top:i64,_stack:[lg]t):bool = top == 0
 let popStack   't [lg] (top:i64, stack:*[lg]t):(t,(i64,[lg]t)) = (stack[top-1],(top-1,stack))
 let pushStack  't [lg] (i:t) (top:i64,stack:*[lg]t):(i64,*[lg]t) =
