@@ -1,6 +1,3 @@
-# treeSearch
-Cull UV Tracking vectors from a synthetic dataset.
+Searches an image for various values using a 2d vector-represented binary tree.
 
-
-futhark cuda fut/simple.fut --library
-futhask cuda fut/simple.h src Futhark
+I use the script rebuild.sh to build the futhark parts of this with futhask. 
